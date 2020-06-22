@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <a href="index.jsp">Goto B</a>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <head>
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
 <style type="text/css">
 html { 
-    overflow: auto; 
-    -webkit-overflow-scrolling: touch; 
+    -webkit-overflow-scrolling: touch;
+    overflow: scroll;
 }
 body {
     height: 100%;
@@ -15,15 +16,14 @@ body {
     margin: 0;
     padding: 8px;
 }
-    #fancybox-content{
-overflow: scroll !important;
--webkit-overflow-scrolling: touch !important;
-}
+    
 </style>
-</head>
-<body background="background3.jpg">
-<!-- pdf present this location local storage.-->
+
+    </head>
+    <body background="background3.jpg">
+
 <iframe height=990px id="iframe" scrolling="no" width="100%" id="iframe" src="BBH_Menu.pdf" />
+        
 <script>
 $("#iframe").contents().find("body").css({
     "height": "100%",
@@ -31,5 +31,5 @@ $("#iframe").contents().find("body").css({
     "-webkit-overflow-scrolling": "touch"
 });
 </script>
-</body>
+    </body>
 </html>
