@@ -65,9 +65,9 @@ img {vertical-align: middle;}
 /* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
+  height: 17px;
+  width: 17px;
+  margin: 0 7px;
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
@@ -75,15 +75,15 @@ img {vertical-align: middle;}
 }
 
 .active, .dot:hover {
-  background-color: #717171;
+  background-color: #717174;
 }
 
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
+  -webkit-animation-duration: 1.2s;
   animation-name: fade;
-  animation-duration: 1.5s;
+  animation-duration: 1.2s;
 }
 
 @-webkit-keyframes fade {
@@ -224,6 +224,7 @@ img {vertical-align: middle;}
 
 <div style="text-align:center">
   
+    <span class="dot" onclick="currentSlide(1)"></span>
     <span class="dot" onclick="currentSlide(2)"></span> 
     <span class="dot" onclick="currentSlide(3)"></span> 
     <span class="dot" onclick="currentSlide(4)"></span> 
